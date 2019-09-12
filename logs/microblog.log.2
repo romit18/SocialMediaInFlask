@@ -1,0 +1,104 @@
+2019-08-24 11:41:02,531 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:43:16,024 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:43:17,775 ERROR: Exception on /login [GET] [in c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py: 1780]
+Traceback (most recent call last):
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\romit\PycharmProjects\untitled\app\routes.py", line 38, in login
+    return render_template('login.html',title='Sign In',form=form)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\login.html", line 23, in template
+    <p>{{ form.submit , button_map={submit: 'primary'}}}</p>
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='
+2019-08-24 11:43:20,630 ERROR: Exception on /login [GET] [in c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py: 1780]
+Traceback (most recent call last):
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\romit\PycharmProjects\untitled\app\routes.py", line 38, in login
+    return render_template('login.html',title='Sign In',form=form)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\login.html", line 23, in template
+    <p>{{ form.submit , button_map={submit: 'primary'}}}</p>
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\parser.py", line 876, in subparse
+    self.stream.expect('variable_end')
+  File "c:\users\romit\pycharmprojects\untitled\venv\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of print statement', got '='

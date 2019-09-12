@@ -1,0 +1,113 @@
+2019-06-04 09:51:46,186 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 09:52:05,348 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 09:52:27,973 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 09:53:04,550 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 10:04:59,358 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 10:05:06,889 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 10:20:00,304 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 10:22:09,212 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 10:22:50,347 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-06-04 10:23:37,458 ERROR: Exception on /user/Romit [GET] [in C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py: 1780]
+Traceback (most recent call last):
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\romit\PycharmProjects\untitled\app\routes.py", line 67, in user
+    return render_template('user.html',user=user,posts=posts)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\base.html", line 32, in top-level template code
+    {% block content%}{% endblock %}
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\user.html", line 14, in block "content"
+    {% elif not current_user.is_following(user) %}
+  File "C:\Users\romit\PycharmProjects\untitled\app\models.py", line 51, in is_following
+    return self.followed.filter(followers.c.followed_id==user.id).count>0
+TypeError: '>' not supported between instances of 'method' and 'int'
+2019-06-04 10:24:00,773 ERROR: Exception on /user/Romit77 [GET] [in C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py: 1780]
+Traceback (most recent call last):
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\_compat.py", line 36, in reraise
+    raise value
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\romit\PycharmProjects\untitled\app\routes.py", line 67, in user
+    return render_template('user.html',user=user,posts=posts)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\romit\PycharmProjects\untitled\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\base.html", line 32, in top-level template code
+    {% block content%}{% endblock %}
+  File "C:\Users\romit\PycharmProjects\untitled\app\templates\user.html", line 14, in block "content"
+    {% elif not current_user.is_following(user) %}
+  File "C:\Users\romit\PycharmProjects\untitled\app\models.py", line 51, in is_following
+    return self.followed.filter(followers.c.followed_id==user.id).count>0
+TypeError: '>' not supported between instances of 'method' and 'int'
+2019-08-23 23:04:50,716 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-23 23:06:25,279 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-23 23:08:56,550 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-23 23:09:03,545 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-23 23:09:11,192 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-23 23:09:16,432 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-23 23:09:22,431 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 10:50:03,489 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 10:51:21,958 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:02:07,814 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:03:40,986 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:07:13,265 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:10:17,475 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:11:51,032 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:12:16,031 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:12:43,546 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:16:02,471 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:17:14,066 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:17:36,403 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:18:24,408 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:19:57,843 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:22:30,199 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:25:31,149 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:32:58,555 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:35:19,994 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
+2019-08-24 11:37:11,649 INFO: Microblog startup [in C:\Users\romit\PycharmProjects\untitled\app\__init__.py: 38]
